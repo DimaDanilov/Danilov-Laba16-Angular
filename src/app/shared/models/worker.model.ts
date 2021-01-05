@@ -4,7 +4,7 @@ export interface Worker {
   patronymic: string;
   phone_number: string;
   email: string;
-  birthdate: number;
+  birthdate: string;
   workplace: number;
   id?: number;
 }

@@ -4,9 +4,9 @@
       "name": "Ivan",
       "surname": "Ivanov",
       "patronymic": "Ivanovich",
-      "phone_number": "123123123",
+      "phone_number": "+7 (123) 123-12-32",
       "email": "ivan@mail.ru",
-      "birthdate": 123123123,
+      "birthdate": "1231-03-12",
       "workplace": 1,
       "id": 1
     },
@@ -14,9 +14,9 @@
       "name": "Petr",
       "surname": "Petrov",
       "patronymic": "Petrovich",
-      "phone_number": "1111111",
-      "email": "укеуке",
-      "birthdate": 123124124,
+      "phone_number": "+7 (424) 124-23-34",
+      "email": "petr-petrov@mail.com",
+      "birthdate": "4213-03-12",
       "workplace": 3,
       "id": 2
     }

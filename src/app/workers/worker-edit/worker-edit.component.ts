@@ -17,6 +17,12 @@ export class WorkerEditComponent implements OnInit {
   workerForm: FormGroup;
   myWorkerPlace = MyWorkerPlace;
 
+
+  phoneMask = ' (000) 000-00-00';
+  textPattern = { 'R': { pattern: new RegExp('\[а-яА-Яa-zA-Z\]')} };
+  phonePattern = /7 \(\d\d\d\) \d\d\d\-\d\d\-\d\d/g;
+  emailPattern = /\S+@\S+\.\S+/;
+
   constructor(
     private activatedRouter: ActivatedRoute,
     private workersService: WorkersService,
@@ -32,8 +38,8 @@ export class WorkerEditComponent implements OnInit {
       name: new FormControl(null, [Validators.required]),
       surname: new FormControl(null, [Validators.required]),
       patronymic: new FormControl(null, [Validators.required]),
-      phone_number: new FormControl(null, [Validators.required]),
-      email: new FormControl(null, [Validators.required]),
+      phone_number: new FormControl(null, [Validators.required, Validators.pattern(this.phonePattern)]),
+      email: new FormControl(null, [Validators.required, Validators.pattern(this.emailPattern)]),
       birthdate: new FormControl(null, [Validators.required]),
       workplace: new FormControl(null, [Validators.required]),
     });

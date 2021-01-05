@@ -6,6 +6,8 @@
         type="text"
         class="form-control"
         id="workername"
+        [patterns]="textPattern"
+        mask="R*"
         placeholder="Имя"
         formControlName="name"
       />
@@ -16,6 +18,8 @@
         type="text"
         class="form-control"
         id="workersurname"
+        [patterns]="textPattern"
+        mask="R*"
         placeholder="Фамилия"
         formControlName="surname"
       />
@@ -26,6 +30,8 @@
         type="text"
         class="form-control"
         id="workerpatronymic"
+        [patterns]="textPattern"
+        mask="R*"
         placeholder="Отчество"
         formControlName="patronymic"
       />
@@ -36,6 +42,9 @@
         type="text"
         class="form-control"
         id="workerphone"
+        mask = {{phoneMask}} 
+        prefix="+7"
+        [dropSpecialCharacters]="false"
         placeholder="Введите номер телефона..."
         formControlName="phone_number"
       />
@@ -53,7 +62,7 @@
     <div class="form-group">
       <label for="workerbirth">Дата рождения <span class="red_star">*</span></label>
       <input
-        type="number"
+        type="date"
         class="form-control"
         id="workerbirth"
         placeholder="Введите дату рождения..."

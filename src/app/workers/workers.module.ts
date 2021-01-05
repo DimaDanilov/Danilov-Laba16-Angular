@@ -5,9 +5,15 @@ import { WorkersRoutingModule } from './workers-routing.module';
 import { WorkersComponent } from './workers.component';
 import { WorkerEditComponent } from './worker-edit/worker-edit.component';
 import { WorkerListComponent } from './worker-list/worker-list.component';
+import { NgxMaskModule, IConfig } from 'ngx-mask'
 
 @NgModule({
   declarations: [WorkersComponent, WorkerEditComponent, WorkerListComponent],
-  imports: [CommonModule, WorkersRoutingModule, ReactiveFormsModule],
+  imports: [
+    CommonModule, 
+    WorkersRoutingModule, 
+    ReactiveFormsModule, 
+    NgxMaskModule.forRoot()
+  ],
 })
 export class WorkersModule {}
