@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Worker } from 'src/app/shared/models/worker.model';
+import { Worker, MyWorkerPlace } from 'src/app/shared/models/worker.model';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { isNullOrUndefined } from 'util';
 import { WorkersService } from 'src/app/shared/services/workers.service';
@@ -11,9 +11,11 @@ import { WorkersService } from 'src/app/shared/services/workers.service';
   styleUrls: ['./worker-edit.component.css'],
 })
 export class WorkerEditComponent implements OnInit {
+
   id: number;
   worker: Worker;
   workerForm: FormGroup;
+  myWorkerPlace = MyWorkerPlace;
 
   constructor(
     private activatedRouter: ActivatedRoute,
@@ -29,6 +31,11 @@ export class WorkerEditComponent implements OnInit {
     this.workerForm = new FormGroup({
       name: new FormControl(null, [Validators.required]),
       surname: new FormControl(null, [Validators.required]),
+      patronymic: new FormControl(null, [Validators.required]),
+      phone_number: new FormControl(null, [Validators.required]),
+      email: new FormControl(null, [Validators.required]),
+      birthdate: new FormControl(null, [Validators.required]),
+      workplace: new FormControl(null, [Validators.required]),
     });
     this.getData();
   }
@@ -44,6 +51,11 @@ export class WorkerEditComponent implements OnInit {
       this.workerForm.patchValue({
         name: this.worker.name,
         surname: this.worker.surname,
+        patronymic: this.worker.patronymic,
+        phone_number: this.worker.phone_number,
+        email: this.worker.email,
+        birthdate: this.worker.birthdate,
+        workplace: this.worker.workplace,
       });
     }
   }
