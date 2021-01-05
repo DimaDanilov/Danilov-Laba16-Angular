@@ -6,7 +6,7 @@
       "patronymic": "Ivanovich",
       "phone_number": "+7 (123) 123-12-32",
       "email": "ivan@mail.ru",
-      "birthdate": "1231-03-12",
+      "birthdate": "1988-03-12",
       "workplace": 1,
       "id": 1
     },
@@ -16,7 +16,7 @@
       "patronymic": "Petrovich",
       "phone_number": "+7 (424) 124-23-34",
       "email": "petr-petrov@mail.com",
-      "birthdate": "4213-03-12",
+      "birthdate": "1909-03-12",
       "workplace": 3,
       "id": 2
     }

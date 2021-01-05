@@ -18,6 +18,10 @@ export class WorkerEditComponent implements OnInit {
   myWorkerPlace = MyWorkerPlace;
 
 
+  // CurrentDate = new Date();
+  // CurrentDateString = this.CurrentDate.getFullYear() + "-" + ("0"+(this.CurrentDate.getMonth()+1)).slice(-2) + "-" + ("0" + this.CurrentDate.getDate()).slice(-2);
+  
+
   phoneMask = ' (000) 000-00-00';
   textPattern = { 'R': { pattern: new RegExp('\[а-яА-Яa-zA-Z\]')} };
   phonePattern = /7 \(\d\d\d\) \d\d\d\-\d\d\-\d\d/g;
@@ -40,7 +44,7 @@ export class WorkerEditComponent implements OnInit {
       patronymic: new FormControl(null, [Validators.required]),
       phone_number: new FormControl(null, [Validators.required, Validators.pattern(this.phonePattern)]),
       email: new FormControl(null, [Validators.required, Validators.pattern(this.emailPattern)]),
-      birthdate: new FormControl(null, [Validators.required]),
+      birthdate: new FormControl(null, [Validators.required, Validators.max(Date.now())]),
       workplace: new FormControl(null, [Validators.required]),
     });
     this.getData();
