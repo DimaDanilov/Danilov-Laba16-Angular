@@ -36,9 +36,29 @@
       "patronymic": "Sanyavich",
       "phone_number": "+7 (423) 753-12-24",
       "email": "sanya@mail.ru",
-      "birthdate": "1988-03-12",
+      "birthdate": "1965-03-12",
       "workplace": 0,
       "id": 4
+    },
+    {
+      "name": "йцуйцуйцу",
+      "surname": "фывфывфйцуйцуйцуй",
+      "patronymic": "фывцйЙЦйц",
+      "phone_number": "+7 (232) 321-23-12",
+      "email": "dima@mail.ru",
+      "birthdate": "1999-12-23",
+      "workplace": 0,
+      "id": 5
+    },
+    {
+      "name": "gregoryi",
+      "surname": "asdawqe",
+      "patronymic": "Sanyavich",
+      "phone_number": "+7 (423) 241-12-24",
+      "email": "greg@mail.ru",
+      "birthdate": "1988-03-12",
+      "workplace": 0,
+      "id": 6
     }
   ]
 }

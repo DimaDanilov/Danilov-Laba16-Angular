@@ -21,6 +21,40 @@ export class WorkerTableComponent implements OnInit {
     return age;
   }
 
+  lastsort=null;
+  sortTable(sortType){
+    if (sortType==0)
+      if (this.lastsort!=0){
+        console.log("ID в порядке возрастания");
+        this.lastsort=0;
+        this.workers.sort(function(a, b) { 
+          return a.id - b.id;
+        });
+      }
+      else {
+        console.log("ID в порядке убывания");
+        this.lastsort=1;
+        this.workers.sort(function(a, b) { 
+          return b.id - a.id;
+        });
+      }
+    else 
+      if (this.lastsort!=2){
+        console.log("Возраст в порядке возрастания");
+        this.lastsort=2;
+        this.workers.sort(function(a, b) {          
+          return Date.parse(a.birthdate) - Date.parse(b.birthdate);
+        });
+      }
+      else {
+        console.log("Возраст в порядке убывания");
+        this.lastsort=3;
+        this.workers.sort(function(a, b) {
+          return Date.parse(b.birthdate) - Date.parse(a.birthdate);
+        });
+      }
+  }
+
 
   constructor(private workersService: WorkersService, private router: Router) {}
 
