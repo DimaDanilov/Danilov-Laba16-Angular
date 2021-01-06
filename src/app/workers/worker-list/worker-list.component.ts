@@ -10,6 +10,9 @@ import { Worker, MyWorkerPlace } from 'src/app/shared/models/worker.model';
 export class WorkerListComponent implements OnInit {
   workers: Worker[];
   myWorkerPlace: MyWorkerPlace;
+  searchStr = '';
+
+
   constructor(private router: Router) {}
 
   ngOnInit(): void {

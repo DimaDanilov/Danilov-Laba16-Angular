@@ -13,6 +13,7 @@ export class WorkerTableComponent implements OnInit {
   workers: Worker[] = [];
   @Input() title_num;
   @Input() title = '';
+  @Input() search_str = '';
 
   FindAge(birthday: string): any{
     let timeDiff = Math.abs(Date.now() - Date.parse(birthday));

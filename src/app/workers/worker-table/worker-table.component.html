@@ -13,7 +13,7 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let worker of getByType(title_num)">
+      <tr *ngFor="let worker of getByType(title_num) | searchFilter: search_str">
         <td scope="row">{{ worker.id }}</td>
         <td>{{ worker.name }}</td>
         <td>{{ worker.surname }}</td>
