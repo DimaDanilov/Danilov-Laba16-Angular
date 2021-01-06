@@ -1,13 +1,13 @@
 {
   "workers": [
     {
-      "name": "Ivan",
-      "surname": "Ivanov",
-      "patronymic": "Ivanovich",
+      "name": "Дмитрий",
+      "surname": "Данилов",
+      "patronymic": "Алексеевич",
       "phone_number": "+7 (123) 123-12-32",
-      "email": "ivan@mail.ru",
+      "email": "dimadanilov@mail.ru",
       "birthdate": "1988-03-12",
-      "workplace": 1,
+      "workplace": 0,
       "id": 1
     },
     {
@@ -17,17 +17,17 @@
       "phone_number": "+7 (424) 124-23-34",
       "email": "petr-petrov@mail.com",
       "birthdate": "1909-03-12",
-      "workplace": 3,
+      "workplace": 0,
       "id": 2
     },
     {
-      "name": "asdqwфывйцуф",
-      "surname": "йцуйцуйцуй",
-      "patronymic": "цуйцуйцу",
+      "name": "Иван",
+      "surname": "Кириллов",
+      "patronymic": "Кириллович",
       "phone_number": "+7 (232) 321-23-12",
-      "email": "dima@mail.ru",
-      "birthdate": "1999-12-23",
-      "workplace": 2,
+      "email": "ivan@mail.ru",
+      "birthdate": "1949-12-23",
+      "workplace": 1,
       "id": 3
     },
     {
@@ -41,24 +41,84 @@
       "id": 4
     },
     {
-      "name": "йцуйцуйцу",
-      "surname": "фывфывфйцуйцуйцуй",
-      "patronymic": "фывцйЙЦйц",
+      "name": "Григорий",
+      "surname": "Григорьев",
+      "patronymic": "Григорьевич",
       "phone_number": "+7 (232) 321-23-12",
-      "email": "dima@mail.ru",
+      "email": "greg@yandex.ru",
       "birthdate": "1999-12-23",
-      "workplace": 0,
+      "workplace": 1,
       "id": 5
     },
     {
-      "name": "gregoryi",
-      "surname": "asdawqe",
-      "patronymic": "Sanyavich",
+      "name": "Владик",
+      "surname": "Владиков",
+      "patronymic": "Владикович",
       "phone_number": "+7 (423) 241-12-24",
-      "email": "greg@mail.ru",
+      "email": "vladik@mail.ru",
       "birthdate": "1988-03-12",
-      "workplace": 0,
+      "workplace": 2,
       "id": 6
+    },
+    {
+      "name": "Helga",
+      "surname": "Arnoldova",
+      "patronymic": "Valimirovna",
+      "phone_number": "+7 (520) 658-12-52",
+      "email": "helga@gmail.com",
+      "birthdate": "1952-11-07",
+      "workplace": 2,
+      "id": 7
+    },
+    {
+      "name": "Kirill",
+      "surname": "TheKing",
+      "patronymic": "Kingovich",
+      "phone_number": "+7 (888) 222-11-33",
+      "email": "kirilltheking@gmail.com",
+      "birthdate": "1998-12-06",
+      "workplace": 3,
+      "id": 8
+    },
+    {
+      "name": "Юрий",
+      "surname": "Юрьев",
+      "patronymic": "Юрьевич",
+      "phone_number": "+7 (402) 154-12-62",
+      "email": "yura@mail.ru",
+      "birthdate": "1998-12-06",
+      "workplace": 3,
+      "id": 9
+    },
+    {
+      "name": "Василий",
+      "surname": "Васильев",
+      "patronymic": "Юрьевич",
+      "phone_number": "+7 (412) 251-42-78",
+      "email": "vasyavasyliev@mail.ru",
+      "birthdate": "1968-04-09",
+      "workplace": 3,
+      "id": 10
+    },
+    {
+      "name": "Yarik",
+      "surname": "Yarikov",
+      "patronymic": "Yarikovich",
+      "phone_number": "+7 (754) 123-53-01",
+      "email": "yarik@mail.ru",
+      "birthdate": "1995-02-01",
+      "workplace": 1,
+      "id": 11
+    },
+    {
+      "name": "Валя",
+      "surname": "Валериева",
+      "patronymic": "Валериевна",
+      "phone_number": "+7 (920) 132-52-16",
+      "email": "valya@mail.ru",
+      "birthdate": "2001-07-15",
+      "workplace": 1,
+      "id": 12
     }
   ]
 }

@@ -3,17 +3,17 @@
   <table class="table table-striped">
     <thead class="thead-dark">
       <tr>
-        <th scope="col" width="5%" (click)=sortTable(0)>#</th>
+        <th scope="col" width="5%" (click)="LastSortCounter(0)" style="cursor: pointer;">#</th>
         <th scope="col" width="25%">Имя</th>
         <th scope="col" width="25%">Фамилия</th>
-        <th scope="col" width="10%" (click)=sortTable(1)>Возраст</th>
+        <th scope="col" width="10%" (click)="LastSortCounter(1)" style="cursor: pointer;">Возраст</th>
         <th scope="col" width="15%">Отдел</th>
         <th scope="col"></th>
         <th scope="col"></th>
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let worker of getByType(title_num) | searchFilter: search_str">
+      <tr *ngFor="let worker of getByType(title_num) | searchFilter: search_str | sort: lastsort: sortType">
         <td scope="row">{{ worker.id }}</td>
         <td>{{ worker.name }}</td>
         <td>{{ worker.surname }}</td>
