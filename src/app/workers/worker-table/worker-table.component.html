@@ -1,0 +1,35 @@
+<div class="container-fluid row mx-0">
+  <h4>{{title}}</h4>
+  <table class="table table-striped">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col" width="5%">#</th>
+        <th scope="col" width="25%">Имя</th>
+        <th scope="col" width="25%">Фамилия</th>
+        <th scope="col" width="10%">Возраст</th>
+        <th scope="col" width="15%">Отдел</th>
+        <th scope="col"></th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let worker of getByType(title_num)">
+        <td scope="row">{{ worker.id }}</td>
+        <td>{{ worker.name }}</td>
+        <td>{{ worker.surname }}</td>
+        <td>{{ FindAge(worker.birthdate) }}</td>
+        <td>{{ title }}</td>
+        <td>
+          <button class="btn btn-outline-danger" (click)="onDelete(worker.id)">
+            Удалить
+          </button>
+        </td>
+        <td>
+          <button class="btn btn-primary" (click)="onLinkProfile(worker.id)">
+            Редактировать
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

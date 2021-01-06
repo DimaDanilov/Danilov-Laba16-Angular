@@ -1,38 +1,23 @@
-<div class="container-fluid">
-  <table class="table">
-    <thead>
-      <tr>
-        <th scope="col">#</th>
-        <th scope="col">Имя</th>
-        <th scope="col">Фамилия</th>
-        <th scope="col">Возраст</th>
-        <th scope="col">Отдел</th>
-        <th scope="col"></th>
-        <th scope="col">
-          <button class="btn btn-primary" (click)="onAddProfile()">
-            Добавить пользователя
-          </button>
-        </th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let worker of workers">
-        <td scope="row">{{ worker.id }}</td>
-        <td>{{ worker.name }}</td>
-        <td>{{ worker.surname }}</td>
-        <td>{{ FindAge(worker.birthdate) }}</td>
-        <td>{{ worker.workplace }}</td>
-        <td>
-          <button class="btn btn-outline-danger" (click)="onDelete(worker.id)">
-            Удалить
-          </button>
-        </td>
-        <td>
-          <button class="btn btn-primary" (click)="onLinkProfile(worker.id)">
-            Редактировать
-          </button>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+<button class="btn btn-primary mt-3 mr-5 float-right" (click)="onAddProfile()">
+Добавить пользователя
+</button>
+
+<app-worker-table
+    [title]="'IT отдел'"
+    [title_num]="0">
+</app-worker-table>
+
+<app-worker-table
+    [title]="'Отдел продаж'"
+    [title_num]="1">
+</app-worker-table>
+
+<app-worker-table
+    [title]="'Отдел доставки'"
+    [title_num]="2">
+</app-worker-table>
+
+<app-worker-table
+    [title]="'Юридический отдел'"
+    [title_num]="3">
+</app-worker-table>

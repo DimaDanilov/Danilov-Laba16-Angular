@@ -19,6 +19,26 @@
       "birthdate": "1909-03-12",
       "workplace": 3,
       "id": 2
+    },
+    {
+      "name": "asdqwфывйцуф",
+      "surname": "йцуйцуйцуй",
+      "patronymic": "цуйцуйцу",
+      "phone_number": "+7 (232) 321-23-12",
+      "email": "dima@mail.ru",
+      "birthdate": "1999-12-23",
+      "workplace": 2,
+      "id": 3
+    },
+    {
+      "name": "Sanya",
+      "surname": "Sanyav",
+      "patronymic": "Sanyavich",
+      "phone_number": "+7 (423) 753-12-24",
+      "email": "sanya@mail.ru",
+      "birthdate": "1988-03-12",
+      "workplace": 0,
+      "id": 4
     }
   ]
 }
